@@ -1,0 +1,25 @@
+@hostName = http://localhost:3000
+
+get {{hostName}}/api/students
+
+###
+get {{hostName}}/api/students/5
+
+###
+post {{hostName}}/api/students
+Content-Type: application/json
+
+{   
+    "name": "Arjuna",
+    "age": 23
+}
+
+###
+PUT {{hostName}}/api/students
+Content-Type: application/json
+
+{   
+  "id": 5,
+  "name": "yamadharma",
+  "age": 54
+}
